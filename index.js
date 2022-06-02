@@ -48,7 +48,7 @@ const pokedex = [
 
 let pokemon = undefined;
 
-app.get("/index", (req, res) => {
+app.get("/", (req, res) => {
 
   res.render("index", { pokedex, pokemon });
 });
@@ -57,13 +57,13 @@ app.post("/create", (req, res) => {
   const pokemon = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon)
-  res.redirect("/index");
+  res.redirect("/");
 });
 
 app.get("/detalhes/:id", (req, res) => {
   const id = +req.params.id;
   pokemon = pokedex.find((pokemon) => pokemon.id === id);
-  res.redirect("/index");
+  res.redirect("/");
 });
 
 app.post("/update/:id", (req, res) => {
@@ -81,7 +81,7 @@ app.get("/delete/:id", (req, res) => {
 
   delete pokedex[id]
 
-  res.redirect("/index")
+  res.redirect("/")
 })
 
 
