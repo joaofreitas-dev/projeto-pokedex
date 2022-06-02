@@ -1,0 +1,289 @@
+/* Reset  e font*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background-color: #919191;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list li {
+  color: #FFF;
+  list-style: none;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  width: 14vh;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(218, 62, 62);
+  height: 8vh;
+}
+
+header {
+  max-width: 81.5%;
+  height: 20rem;
+  background-color: #323232;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+header .container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+header h1 {
+  color: #fff;
+  padding: 0 0 1rem 0;
+
+}
+
+header p {
+  color: #FFF;
+  font-weight: 600;
+  white-space: normal;
+
+}
+
+main {
+  margin: 0 10rem 0 10rem;
+  width: auto;
+}
+
+div h2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin: 5rem;
+}
+
+section#cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section#cards div.card {
+  width: 20rem;
+  box-shadow: 5px 5px 10px #00000020;
+  padding: 1rem;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin-top: 1rem;
+  height: auto;
+}
+
+section#cards div.card img {
+  width: 100%;
+
+}
+
+section#cards div.card h2 {
+  margin-bottom: 1rem;
+
+}
+
+section#cards div.card p.descricao {
+  margin-bottom: 2rem;
+
+}
+
+section#cards div.card .btn-alteracao {
+  display: flex;
+  color: #000;
+  font-size: 1.2em;
+  width: auto;
+  height: 12px;
+  padding: 12px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #42ac52;
+  border-radius: 10px;
+  transition: 1s;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+section#cards div.card .btn-alteracao:hover {
+  color: #42ac52;
+  border: solid #000 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+section#cards div.card .btn-alteracao2 {
+  display: flex;
+  color: #FFF;
+  font-size: 1.2em;
+  width: auto;
+  height: 12px;
+  padding: 12px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #c30d0d;
+  border-radius: 10px;
+  transition: 1s;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+section#cards div.card .btn-alteracao2:hover {
+  color: rgb(255, 0, 0);
+  background-color: rgb(249, 249, 249);
+  border: solid #000 1px;
+}
+
+section#cadastro {
+  background-color: #30A7D7;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 5rem;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#cadastro h2 {
+  padding-bottom: 5rem;
+  text-align: center;
+  color: #FFF;
+}
+
+section#cadastro form {
+  width: 50%;
+}
+
+section#cadastro form label {
+  color: #FFF;
+  margin: 1rem 0 1rem 0;
+}
+
+section#cadastro form input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px rgb(169, 169, 169);
+  margin-bottom: 1rem;
+}
+
+#form-cadastro {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#cadastro form #btnCadastrar {
+  padding: 0.6rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: #919191;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section#cadastro form #btnCadastrar:hover {
+  color: #919191;
+  background-color: #FFF;
+}
+
+section#cadastro form #btnAtualizar {
+  padding: 0.6rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: #919191;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section#cadastro form #btnAtualizar {
+  color: #919191;
+  background-color: #FFF;
+}
+
+
+
+footer {
+  margin-top: 5rem;
+  color: #FFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #DA3E3E;
+  height: 8vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
