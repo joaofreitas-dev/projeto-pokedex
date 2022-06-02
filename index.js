@@ -73,7 +73,7 @@ app.post("/update/:id", (req, res) => {
   newPokemon.id = id + 1;
   pokedex[id] = newPokemon;
   pokemon = undefined;
-  res.redirect("/index")
+  res.redirect("/")
 })
 
 app.get("/delete/:id", (req, res) => {
